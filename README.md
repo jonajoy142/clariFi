@@ -2,7 +2,7 @@
 
 > Verifiable financial intelligence. AI reasons, Python calculates, you audit every rupee.
 
-**Live demo:** [your-render-url.onrender.com]  
+**Live demo:** [to be updated]  
 **Built by:** Jona Joy · [jonajoy142@gmail.com](mailto:jonajoy142@gmail.com) · [LinkedIn](https://linkedin.com/in/jona-joy-b30b44203)
 
 ---
@@ -23,7 +23,7 @@ Unlike generic AI financial tools, ClariFi:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Vue.js Frontend                       │
+│                    Frontend                       │
 │  Profile → Tax → Investment → Loans → AI CFO Chat       │
 └──────────────────────┬──────────────────────────────────┘
                        │ REST API
