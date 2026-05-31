@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Instrument Sans";
+  --font-display: "Newsreader";
+  --background: 45 29% 97%;
+  --foreground: 222 20% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 20% 11%;
+  --primary: 176 47% 18%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 42 19% 92%;
+  --muted-foreground: 222 10% 43%;
+  --border: 40 18% 85%;
+  --input: 40 18% 85%;
+  --ring: 176 47% 18%;
+  --destructive: 3 64% 46%;
+  --destructive-foreground: 0 0% 100%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.88), rgba(250,249,245,0.95)),
+    radial-gradient(circle at 50% -10%, rgba(16, 83, 77, 0.12), transparent 32%);
+  color: hsl(var(--foreground));
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(16, 83, 77, 0.14);
+}
+
+.finance-grid {
+  background-image: linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}

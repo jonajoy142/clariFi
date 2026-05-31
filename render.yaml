@@ -1,11 +1,15 @@
-# render.yaml — deploy backend on Render free tier
+# render.yaml — optional backend deployment target
 services:
   - type: web
     name: clarifi-api
     runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    buildCommand: pip install poetry && poetry install --no-interaction --no-ansi
+    startCommand: poetry run alembic upgrade head && poetry run uvicorn main:app --host 0.0.0.0 --port $PORT
     rootDir: backend
     envVars:
-      - key: ANTHROPIC_API_KEY
-        sync: false   # set in Render dashboard
+      - key: DATABASE_URL
+        sync: false
+      - key: REDIS_URL
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://your-frontend.example
